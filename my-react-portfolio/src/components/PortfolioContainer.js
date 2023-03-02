@@ -1,30 +1,33 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import home from './pages/home';
-import aboutme from './pages/aboutme';
-import contact from './pages/contact';
-import portfolio from './pages/portfolio';
-import resume from './pages/resume';
-import footer from './pages/footer'
+import Aboutme from './pages/aboutme';
+import Contact from './pages/contact';
+import Portfolio from './pages/portfolio';
+import Resume from './pages/resume';
+import Footer from './pages/footer'
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('About');
+    const [currentPage, setCurrentPage] = useState('Aboutme');
 
     const renderPage = () => {
-        if (currentPage === 'portfolio') {
-            return <portfolio />;
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />;
         }
-        if (currentPage === 'resume') {
-            return <resume />;
+        if (currentPage === 'Resume') {
+            return <Resume />;
         }
-        if (currentPage === 'about') {
-            return <about />;
+        if (currentPage === 'Aboutme') {
+            return <Aboutme />;
         }
-        return <contact />;
+        return <Contact />;
     };
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        
-    )
+        <div>
+            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+            {renderPage()}
+            <Footer />
+        </div>
+    );
 }
