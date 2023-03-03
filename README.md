@@ -5,7 +5,7 @@ For this task I was asked to create a REACT portfolio that would be impproved up
 ## Table of Contents
 - [Installation](#installation)
 - [License](#license)
-- [Github Pages link](https://honest-hippo.herokuapp.com/)
+- [Github Pages link](https://pscully21.github.io/my-react-portfolio/)
 
 ## Installation
 1. To use this application yourself you can clone this repository by clicking on the green code button in the top-right of your screen, then copying the code and cloning it using whatever coding software you use. 
@@ -17,3 +17,4 @@ For this task I was asked to create a REACT portfolio that would be impproved up
 This repo has the MIT license 
 
 ## Github Pages link
+https://pscully21.github.io/my-react-portfolio/
