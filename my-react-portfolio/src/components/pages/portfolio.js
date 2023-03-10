@@ -20,6 +20,12 @@ const projectItems = [
         repo: 'https://github.com/Pscully21/Arsenal-quiz',
         deployed: ''
     },
+    {
+        title: 'under-the-hood',
+        image: 'under-the-hood.png',
+        repo: 'https://github.com/uabcFinalProject/under-the-hood',
+        deployed: 'https://under-the-hood.herokuapp.com/profile',
+    }
 ]
 export default function Portfolio() {
     return (
